@@ -33,9 +33,21 @@
       }
       body, p, a, button {
         font-family: 'Poppins', sans-serif;
+      
       }
-    </style>
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeIn {
+  animation: fadeIn 1s ease-out forwards;
+}
 
+.fadeIn { animation: fadeIn 1s ease-out forwards; }
+.fadeInDelay1 { animation: fadeIn 1s ease-out forwards; animation-delay: 0.5s; }
+.fadeInDelay2 { animation: fadeIn 1s ease-out forwards; animation-delay: 1s; }
+
+    </style>
 </head>
 
 <body class="bg-black text-white min-h-screen">
@@ -63,15 +75,15 @@
 
   <!-- Hero Content -->
   <div class="relative z-10 flex flex-col justify-center items-center h-full text-center px-6">
-    <h2 class="text-5xl md:text-7xl font-extrabold text-white tracking-tight drop-shadow-[0_0_10px_grey]">
+    <h2 class="fadeIn text-5xl md:text-7xl font-extrabold text-white tracking-tight drop-shadow-[0_0_10px_grey]">
       Premium Cuts for the Sophisticated Men
     </h2>
 
-    <p class="mt-4 text-lg md:text-xl text-gray-300 max-w-2xl">
+    <p class="fadeInDelay1 mt-4 text-lg md:text-xl text-gray-300 max-w-2xl">
       Experience various styles e.g, sharp fades, clean shaves, and luxury grooming in a studio built for confidence.
     </p>
 
-    <button class="mt-8 px-8 py-4 bg-yellow-500 text-black font-semibold text-lg rounded-lg shadow-lg hover:bg-yellow-300 transition">
+    <button class="fadeInDelay2 mt-8 px-8 py-4 bg-yellow-500 text-black font-semibold text-lg rounded-lg shadow-lg hover:bg-yellow-300 transition">
       Book Barber Appointment
     </button>
   </div>
