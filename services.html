@@ -33,6 +33,21 @@
       body, p, a, button {
         font-family: 'Poppins', sans-serif;
       }
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeIn {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.fadeIn { animation: fadeIn 1s ease-out forwards; }
+.fadeInDelay1 { animation: fadeIn 1s ease-out forwards; animation-delay: 0.5s; }
+.fadeInDelay2 { animation: fadeIn 1s ease-out forwards; animation-delay: 1s; }
+.fadeInDelay3 { animation: fadeIn 1s ease-out forwards; animation-delay: 1.2s; }
+.fadeInDelay4 { animation: fadeIn 1s ease-out forwards; animation-delay: 1.4s; }
+.fadeInDelay5 { animation: fadeIn 1s ease-out forwards; animation-delay: 1.6s; }
+
     </style>
 
 </head>
@@ -61,7 +76,7 @@
 
   <div class="max-w-6xl mx-auto px-6 text-center">
   
-    <h2 class="text-4xl font-extrabold mb-16">Our Services</h2>
+    <h2 class="text-4xl font-extrabold mb-16 fadeIn">Our Services</h2>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
 
@@ -69,7 +84,7 @@
       <div class="bg-gray-900 p-10 rounded-xl shadow-lg hover:scale-105 transition duration-300 ease-out flex flex-col items-center min-h-[280px]">
         
         <!-- Icon -->
-         <div class="flex-1 flex items-center justify-center">
+         <div class="flex-1 flex items-center justify-center fadeInDelay1">
         <svg class="w-28 h-28 drop-shadow-[0_0_15px_rgba(166,162,43,0.5)]" viewBox="0 0 24 24"
              xmlns="http://www.w3.org/2000/svg" fill="none"
              stroke="#a6a22b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -89,7 +104,7 @@
       <div class="bg-gray-900 p-10 rounded-xl shadow-lg hover:scale-105 transition duration-300 ease-out flex flex-col items-center min-h-[280px]">
         
         <!-- Icon -->
-        <div class="flex-1 flex items-center justify-center">
+        <div class="flex-1 flex items-center justify-center fadeInDelay2">
         <svg class="w-24 h-24 drop-shadow-[0_0_15px_rgba(166,162,43,0.5)]" viewBox="0 0 24 24"
              xmlns="http://www.w3.org/2000/svg" fill="none"
              stroke="#a6a22b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -109,7 +124,7 @@
       <div class="bg-gray-900 p-10 rounded-xl shadow-lg hover:scale-105 transition duration-300 ease-out flex flex-col items-center min-h-[280px]">
         
         <!-- Icon -->
-        <div class="flex-1 flex items-center justify-center">
+        <div class="flex-1 flex items-center justify-center fadeInDelay3">
         <svg class="w-24 h-24 drop-shadow-[0_0_15px_rgba(166,162,43,0.5)]" viewBox="0 0 24 24"
              xmlns="http://www.w3.org/2000/svg" fill="none"
              stroke="#a6a22b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -124,8 +139,8 @@
         </svg>
         </div>
 
-        <h3 class="text-2xl font-bold mb-1">Hot Towel Shave</h3>
-        <p class="text-gray-400 leading-relaxed max-w-[200px]">A luxury grooming experience with steam and precision.</p>
+        <h3 class="text-2xl font-bold mb-1 fadeInDelay4">Hot Towel Shave</h3>
+        <p class="text-gray-400 leading-relaxed max-w-[200px] fadeInDelay5">A luxury grooming experience with steam and precision.</p>
       </div>
 
     </div>
