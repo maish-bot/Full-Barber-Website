@@ -33,6 +33,18 @@
       body, p, a, button {
         font-family: 'Poppins', sans-serif;
       }
+    @keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeIn {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.fadeIn { animation: fadeIn 1s ease-out forwards; }
+.fadeInDelay1 { animation: fadeIn 1s ease-out forwards; animation-delay: 0.5s; }
+.fadeInDelay2 { animation: fadeIn 1s ease-out forwards; animation-delay: 1s; }
+.fadeInDelay3 { animation: fadeIn 1s ease-out forwards; animation-delay: 1.2s; }
     </style>
 </head
     <body class="bg-black text-white min-h-screen">
@@ -55,7 +67,7 @@
 <!-- Pricing section -->
 <section class="py-20 bg-gradient-to-b from-[#0d0d0d] via-[#111] to-[#0b0b0b] text-white">
 
-  <div class="max-w-6xl mx-auto px-6 text-center">
+  <div class="max-w-6xl mx-auto px-6 text-center fadeIn">
     
     <h2 class="text-4xl font-extrabold mb-4">Service Pricing</h2>
     <p class="text-gray-400 max-w-xl mx-auto mb-16 text-sm md:text-base">
