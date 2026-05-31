@@ -33,7 +33,21 @@
       body, p, a, button {
         font-family: 'Poppins', sans-serif;
       }
-    </style>
+    @keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeIn {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.fadeIn { animation: fadeIn 1s ease-out forwards; }
+.fadeInDelay1 { animation: fadeIn 1s ease-out forwards; animation-delay: 0.5s; }
+.fadeInDelay3 { animation: fadeIn 1s ease-out forwards; animation-delay: 0.8s; }
+.fadeInDelay4 { animation: fadeIn 1s ease-out forwards; animation-delay: 1s; }
+.fadeInDelay5 { animation: fadeIn 1s ease-out forwards; animation-delay: 1.2s; }
+.fadeInDelay6 { animation: fadeIn 1s ease-out forwards; animation-delay: 1.4s; }
+</style>
 </head>
 <body class="bg-black text-white min-h-screen">
 <!-- Nav Bar -->
@@ -57,43 +71,43 @@
 <section class="py-20 bg-gradient-to-b from-[#0d0d0d] via-[#111] to-[#0b0b0b] text-white">
 
   <div class="max-w-6xl mx-auto px-6 text-center">
-    <h2 class="text-4xl font-extrabold mb-12">Gallery</h2>
+    <h2 class="text-4xl font-extrabold mb-12 fadeIn">Gallery</h2>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 bordercolor-white">
 
       <!-- Image 1 -->
 
-        <div class="overflow-hidden rounded-xl fadeIn">
+        <div class="overflow-hidden rounded-xl fadeInDelay1">
   <img src="💈 BEST BARBER TUTORIAL ON YOUTUBE!! MID FADE_ - YouTube.jpg" 
        class="w-full h-64 object-cover rounded-xl border-4 border-white hover:scale-110 transition duration-300" 
        alt="Barber haircut">
 </div>
       <!-- Image 2 -->
-      <div class="overflow-hidden rounded-xl">
+      <div class="overflow-hidden rounded-xl fadeInDelay2">
         <img src="A Cut Above.jpg" class="w-full h-64 object-cover rounded-xl border-4 border-white
  hover:scale-110 transition duration-300">
       </div>
 
       <!-- Image 3 -->
-      <div class="overflow-hidden rounded-xl">
+      <div class="overflow-hidden rounded-xl fadeInDelay3">
         <img src="download (8).jpg" class="w-full h-64 object-cover rounded-xl border-4 border-white
 hover:scale-110 transition duration-300">
       </div>
 
       <!-- Image 4 -->
-      <div class="overflow-hidden rounded-xl">
+      <div class="overflow-hidden rounded-xl fadeInDelay4">
         <img src="download (9).jpg" class="w-full h-64 object-cover rounded-xl border-4 border-white
 hover:scale-110 transition duration-300">
       </div>
 
       <!-- Image 5 -->
-      <div class="overflow-hidden rounded-xl">
+      <div class="overflow-hidden rounded-xl fadeInDelay5">
         <img src="Барбер _мои фото.jpg" class="w-full h-64 object-cover rounded-xl border-4 border-white
 hover:scale-110 transition duration-300">
       </div>
 
       <!-- Image 6 -->
-      <div class="overflow-hidden rounded-xl">
+      <div class="overflow-hidden rounded-xl fadeInDelay6">
         <img src="We always look after our clients.jpg" class="w-full h-64 object-cover rounded-xl border-4 border-white
  hover:scale-110 transition duration-300">
       </div>
