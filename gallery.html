@@ -70,6 +70,15 @@
 
     <button class="md:hidden text-white text-3xl">&#9776;</button>
   </div>
+    <div id="mobileMenuOverlay" class="hidden md:hidden bg-[#111] border-b border-yellow-600/30 w-full px-6 py-6 absolute left-0 top-full z-40 shadow-2xl">
+    <ul class="flex flex-col space-y-4 text-white font-medium text-lg">
+      <li><a href="index.html" onclick="toggleMobileMenu()" class="block hover:text-yellow-500 transition py-2">Home</a></li>
+      <li><a href="services.html" onclick="toggleMobileMenu()" class="block hover:text-yellow-500 transition py-2">Services</a></li>
+      <li><a href="gallery.html" onclick="toggleMobileMenu()" class="block hover:text-yellow-500 transition py-2">Gallery</a></li>
+      <li><a href="pricing.html" onclick="toggleMobileMenu()" class="block hover:text-yellow-500 transition py-2">Pricing</a></li>
+      <li><a href="contacts.html" onclick="toggleMobileMenu()" class="block hover:text-yellow-500 transition py-2">Contact</a></li>
+    </ul>
+  </div>
 </nav>
 
 <!-- Gallery Section -->
