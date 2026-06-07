@@ -12,7 +12,7 @@
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-
+   
     <!-- Custom Tailwind config for gold color -->
     <script>
       tailwind.config = {
@@ -23,6 +23,13 @@
             }
           }
         }
+      }
+    </script>
+       <!-- Script to toggle mobile menu -->
+    <script>
+      function toggleMobileMenu() {
+        const mobileMenu = document.getElementById("mobileMenuOverlay");
+        mobileMenu.classList.toggle("hidden");
       }
     </script>
 
@@ -69,9 +76,21 @@
       <li><a href="pricing.html" class="hover:text-yellow-500 transition">Pricing</a></li>
       <li><a href="contacts.html" class="hover:text-yellow-500 transition">Contact</a></li>
     </ul>
-    <button class="md:hidden text-white text-3xl">&#9776;</button>
+
+          <!-- Replace your old button with this one -->
+    <button onclick="toggleMobileMenu()" class="md:hidden text-white text-3xl focus:outline-none">
+      &#9776;
+    </button>
   </div>
 </nav>
+<!-- MOBILE MENU OVERLAY -->
+<div id="mobileMenuOverlay" class="absolute inset-0 bg-black/95 z-10 hidden pt-28 px-6 flex flex-col space-y-6 text-xl font-medium tracking-wide">
+  <a href="index.html" onclick="toggleMobileMenu()" class="hover:text-yellow-500 transition py-2 border-b border-gray-900">Home</a>
+  <a href="services.html" onclick="toggleMobileMenu()" class="hover:text-yellow-500 transition py-2 border-b border-gray-900">Services</a>
+  <a href="gallery.html" onclick="toggleMobileMenu()" class="hover:text-yellow-500 transition py-2 border-b border-gray-900">Gallery</a>
+  <a href="pricing.html" onclick="toggleMobileMenu()" class="hover:text-yellow-500 transition py-2 border-b border-gray-900">Pricing</a>
+  <a href="contacts.html" onclick="toggleMobileMenu()" class="hover:text-yellow-500 transition py-2">Contact</a>
+</div>
 
   <!-- Hero Content -->
   <div class="relative z-10 flex flex-col justify-center items-center h-full text-center px-6">
